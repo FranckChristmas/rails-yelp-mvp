@@ -1,0 +1,13 @@
+<h1>RESTAURANT INDEX<h1>
+
+<% @restaurants.each do |restaurant|%>
+<div class="m-5">
+<ul class="list-unstyled">
+<li class="list-group-item"><h3><%= link_to restaurant.name, restaurant_path(restaurant) %></h3>
+<h6><%= restaurant.category%></h6>
+<h6><%= restaurant.address%></h6>
+</li>
+</ul>
+</div>
+<% end %>
+

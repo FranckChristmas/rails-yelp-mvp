@@ -1,0 +1,10 @@
+<div class="m-5">
+<h1><%=@restaurant.name%></h1>
+<h4><%=@restaurant.category.capitalize%></h4>
+<h4><%=@restaurant.address%></h4>
+<h4><%=@restaurant.phone_number%></h4>
+<div>
+
+<button class="btn btn-light"><%=link_to "⬅️", restaurants_path %></button>
+<button class="btn btn-light"><%=link_to "Write a review 📝", new_restaurant_review_path(@restaurant) %></button>
+
