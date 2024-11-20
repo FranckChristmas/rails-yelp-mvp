@@ -8,3 +8,12 @@
 <button class="btn btn-light"><%=link_to "⬅️", restaurants_path %></button>
 <button class="btn btn-light"><%=link_to "Write a review 📝", new_restaurant_review_path(@restaurant) %></button>
 
+<p><strong>Reviews from customer about <%=@restaurant.name%></strong></p>
+<ul class="list-group">
+  <% @restaurant.reviews.each do |review| %>
+    <li class="list-group-item">
+        <%= review.content %>
+        <%= review.rating %>
+    </li>
+  <% end %>
+</ul>

@@ -1,5 +1,8 @@
+<div class="position-relative">
 <h1>RESTAURANT INDEX<h1>
-
+<div class="m-5">
+<%= link_to "+ New Restaurant", new_restaurant_path, class: "btn btn-primary"  %>
+</div>
 <% @restaurants.each do |restaurant|%>
 <div class="m-5">
 <ul class="list-unstyled">
@@ -10,4 +13,7 @@
 </ul>
 </div>
 <% end %>
+</div>
+
+
 
